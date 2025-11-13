@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Mac DeMarco</title>
+</head>
+<body>
+    <header>
+        <h1>Mac DeMarco</h1>
+        <p>Singer-Songwriter • Multi-instrumentalist • Producer</p>
+        
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="discography.html">Discography</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="contact">
+            <h2>Contact & Booking</h2>
+            
+            <form action="#" method="post">
+                <fieldset>
+                    <legend>Contact Information</legend>
+                    
+                    <label for="name">Full Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    <br><br>
+                    
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" required>
+                    <br><br>
+                    
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone">
+                    <br><br>
+                    
+                    <label for="organization">Organization/Company:</label>
+                    <input type="text" id="organization" name="organization">
+                    <br><br>
+                    
+                    <label for="inquiry-type">Type of Inquiry:</label>
+                    <select id="inquiry-type" name="inquiry-type" required>
+                        <option value="">Select Inquiry Type</option>
+                        <option value="booking">Booking Request</option>
+                        <option value="press">Press/Media</option>
+                        <option value="collaboration">Collaboration</option>
+                        <option value="general">General Information</option>
+                        <option value="other">Other</option>
+                    </select>
+                </fieldset>
+                
+                <fieldset>
+                    <legend>Booking Details (if applicable)</legend>
+                    
+                    <label for="event-type">Event Type:</label>
+                    <select id="event-type" name="event-type">
+                        <option value="">Select Event Type</option>
+                        <option value="festival">Festival</option>
+                        <option value="concert">Concert</option>
+                        <option value="private">Private Event</option>
+                        <option value="corporate">Corporate Event</option>
+                    </select>
+                    <br><br>
+                    
+                    <label for="event-date">Preferred Date(s):</label>
+                    <input type="date" id="event-date" name="event-date">
+                    <br><br>
+                    
+                    <label for="venue-location">Venue/Location:</label>
+                    <input type="text" id="venue-location" name="venue-location">
+                    <br><br>
+                    
+                    <label for="budget-range">Budget Range:</label>
+                    <select id="budget-range" name="budget-range">
+                        <option value="">Select Budget Range</option>
+                        <option value="under-10k">Under $10,000</option>
+                        <option value="10k-25k">$10,000 - $25,000</option>
+                        <option value="25k-50k">$25,000 - $50,000</option>
+                        <option value="50k-100k">$50,000 - $100,000</option>
+                        <option value="over-100k">Over $100,000</option>
+                    </select>
+                </fieldset>
+                
+                <fieldset>
+                    <legend>Message Details</legend>
+                    
+                    <label for="subject">Subject:</label>
+                    <input type="text" id="subject" name="subject" required>
+                    <br><br>
+                    
+                    <label for="message">Your Message:</label>
+                    <br>
+                    <textarea id="message" name="message" rows="6" cols="50" placeholder="Please provide details about your inquiry..." required></textarea>
+                    <br><br>
+                    
+                    <label for="how-heard">How did you hear about Mac DeMarco?</label>
+                    <select id="how-heard" name="how-heard">
+                        <option value="">Select Option</option>
+                        <option value="live-show">Live Performance</option>
+                        <option value="friend">Friend Recommendation</option>
+                        <option value="social-media">Social Media</option>
+                        <option value="streaming">Streaming Service</option>
+                        <option value="press">Press Article</option>
+                    </select>
+                </fieldset>
+                
+                <input type="submit" value="Send Message">
+                <input type="reset" value="Clear Form">
+            </form>
+            
+            <h3>Professional Contacts</h3>
+            <address>
+                <strong>Management:</strong><br>
+                Mac DeMarco Management<br>
+                <a href="mailto:management@macdemarco.com">management@macdemarco.com</a><br>
+                Phone: <a href="tel:+12345556789">+1 (234) 555-6789</a>
+            </address>
+            
+            <address>
+                <strong>Booking (North America):</strong><br>
+                Paradigm Talent Agency<br>
+                <a href="mailto:booking@paradigmagency.com">booking@paradigmagency.com</a>
+            </address>
+            
+            <address>
+                <strong>Press & Media Inquiries:</strong><br>
+                Captured Tracks / Mac's Record Label<br>
+                <a href="mailto:press@macsrecordlabel.com">press@macsrecordlabel.com</a>
+            </address>
+        </section>
+        <section id="gallery">
+            <h2>Photo Gallery</h2>
+            
+            <article>
+                <h3>Live Performance Photos</h3>
+                <figure>
+                    <img src="Images\bb3c6da0deff9aba6c4fe06c40f85397.jpg" alt="Mac DeMarco performing on stage with his band" width="400">
+                    <figcaption>Mac performing at Coachella 2023 - Photo by Live Nation</figcaption>
+                </figure>
+                
+                <figure>
+                    <img src="Images\1100x1900.jpg" alt="Close-up of Mac playing guitar during a concert" width="400">
+                    <figcaption>Intimate club show in Toronto - Photo by Pitchfork</figcaption>
+                </figure>
+            </article>
+            
+            <article>
+                <h3>Studio & Behind the Scenes</h3>
+                <figure>
+                    <img src="Images\MacDeMarcoDogs-696x442.jpg" alt="Mac recording in his home studio" width="400">
+                    <figcaption>Recording session for "This Old Dog" - Personal Archive</figcaption>
+                </figure>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <h3>Connect With Mac DeMarco</h3>
+        <ul>
+            <li><a href="https://instagram.com/macdemarco">Instagram</a></li>
+            <li><a href="https://twitter.com/macdemarco">Twitter</a></li>
+            <li><a href="https://facebook.com/macdemarco">Facebook</a></li>
+            <li><a href="https://youtube.com/macdemarco">YouTube</a></li>
+            <li><a href="https://spotify.com/macdemarco">Spotify</a></li>
+            <li><a href="https://bandcamp.com/macdemarco">Bandcamp</a></li>
+        </ul>
+        
+        <address>
+            <strong>Official Website:</strong> <a href="https://macdemarco.bandcamp.com">macdemarco.bandcamp.com</a><br>
+            <strong>Fan Mail:</strong> PO Box 123, Brooklyn, NY 11211, USA
+        </address>
+        
+        <p>&copy; 2023 Mac DeMarco. All rights reserved.</p>
+        <p>This is an unofficial portfolio website for educational purposes.</p>
+    </footer>
+</body>
+</html>
