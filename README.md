@@ -22,4 +22,4 @@ A simple HTML website showcasing Mac DeMarco's music and career.
 
 Open `index.html` in your browser to view the website.
 
-*Note: This is an unofficial website for educational purposes.*
+*Note: This is an unofficial website.*
