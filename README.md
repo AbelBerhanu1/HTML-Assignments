@@ -1,4 +1,4 @@
-HTML-Assignment
+"# HTML-Assignment" 
 
 # Mac DeMarco Portfolio Website
 
@@ -12,7 +12,7 @@ A simple HTML website showcasing Mac DeMarco's music and career.
 
 ## 🎵 Features
 
-- Audio players for "Chamber of Reflection" and "My Kind of Woman"
+- Audio players for "Chamber of Reflection", "Another One", and "My Kind of Woman"
 - Music videos and live performances
 - Discography table with chart positions
 - Booking contact form
