@@ -324,8 +324,9 @@ tbody tr:hover {
 }
 
 td {
-    padding: 1rem;
+    padding: 1.2rem;
     vertical-align: top;
+    border-right: 1px solid var(--border);
 }
 
 td:last-child {
