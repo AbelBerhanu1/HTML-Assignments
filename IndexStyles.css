@@ -1,11 +1,8 @@
-/* styles.css - Mac DeMarco Portfolio - Classic Typography Edition */
-
-/* Color Palette - Earthy Tones */
 :root {
-    --primary: #4A6B8A;      /* Muted Blue */
+    --primary: #4A6B8A;    
     --primary-dark: #354A5F;
     --primary-light: #6B8AA6;
-    --accent: #8B7355;       /* Warm Brown */
+    --accent: #8B7355;      
     --accent-light: #A89174;
     --gray: #6C757D;
     --gray-light: #F8F9FA;
@@ -14,8 +11,6 @@
     --shadow: rgba(74, 107, 138, 0.1);
     --border: #DEE2E6;
 }
-
-/* Base Styles with Times New Roman */
 * {
     margin: 0;
     padding: 0;
@@ -32,7 +27,6 @@ body {
     font-size: 17px;
 }
 
-/* Typography */
 h1, h2, h3, h4 {
     font-family: Georgia, 'Times New Roman', Times, serif;
     color: var(--primary-dark);
@@ -71,7 +65,6 @@ p {
     hyphens: auto;
 }
 
-/* Header & Navigation */
 header {
     background-color: var(--primary);
     color: var(--off-white);
@@ -143,7 +136,6 @@ nav a[href="index.html"] {
     font-weight: 600;
 }
 
-/* Main Content */
 main {
     max-width: 1100px;
     margin: 3rem auto;
@@ -175,7 +167,6 @@ section::before {
     border-left: 4px solid var(--primary);
 }
 
-/* Figure & Images */
 figure {
     margin: 2.5rem auto;
     text-align: center;
@@ -206,7 +197,6 @@ figcaption {
     border-top: 1px solid var(--border);
 }
 
-/* Blockquote */
 blockquote {
     border-left: 4px solid var(--accent);
     padding: 1.5rem 2.5rem;
@@ -247,7 +237,6 @@ blockquote footer {
     letter-spacing: 0.5px;
 }
 
-/* Lists */
 ul, ol {
     margin-left: 2rem;
     margin-bottom: 1.8rem;
@@ -271,7 +260,6 @@ ol li::marker {
     font-weight: 600;
 }
 
-/* Articles */
 article {
     margin-bottom: 2.5rem;
     padding-bottom: 2rem;
@@ -283,7 +271,6 @@ article:last-of-type {
     padding-bottom: 0;
 }
 
-/* Table Styles - Classic Newspaper Style */
 table {
     width: 100%;
     border-collapse: collapse;
@@ -346,7 +333,6 @@ td:last-child {
     border-right: none;
 }
 
-/* Video & Audio Player Styles */
 video, audio {
     display: block;
     max-width: 100%;
@@ -368,7 +354,6 @@ audio {
     background: linear-gradient(to right, var(--gray-light), var(--off-white));
 }
 
-/* Custom audio controls */
 audio::-webkit-media-controls-panel {
     background-color: var(--primary-light);
     border-radius: 2px;
@@ -385,7 +370,6 @@ audio::-webkit-media-controls-play-button {
     border-radius: 50%;
 }
 
-/* Footer */
 footer {
     background-color: var(--primary-dark);
     color: var(--off-white);
@@ -487,7 +471,6 @@ footer p:last-of-type {
     color: rgba(248, 249, 250, 0.6);
 }
 
-/* Responsive Design */
 @media (max-width: 992px) {
     main {
         max-width: 95%;
@@ -601,7 +584,6 @@ footer p:last-of-type {
     }
 }
 
-/* Print Styles */
 @media print {
     body {
         font-size: 12pt;
@@ -627,4 +609,5 @@ footer p:last-of-type {
     table {
         break-inside: avoid;
     }
+
 }
