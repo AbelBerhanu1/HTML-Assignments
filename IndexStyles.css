@@ -229,7 +229,7 @@ blockquote p {
 
 blockquote footer {
     text-align: right;
-    color: var(--gray);
+    color: var(--off-white);
     font-weight: 600;
     margin-top: 1rem;
     font-style: normal;
@@ -611,4 +611,5 @@ footer p:last-of-type {
     }
 
 }
+
 
