@@ -347,7 +347,6 @@ video {
     border-radius: 2px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
     border: 1px solid var(--border);
-    background-color: var(--gray-dark);
     transition: all 0.3s ease;
 }
 
@@ -662,4 +661,5 @@ footer p:last-of-type {
         color: #000;
         text-decoration: none;
     }
+
 }
