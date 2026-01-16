@@ -6,4 +6,14 @@ document.addEventListener('DOMContentLoaded', () => {
   toggle.style.top = '10px';
   toggle.style.right = '10px';
   toggle.style.zIndex = '999';
+
   document.body.appendChild(toggle);
+
+  if (localStorage.getItem('darkMode') === 'enabled') {
+    body.classList.add('dark-mode');
+  }
+  
+  toggle.addEventListener('click', () => {
+    body.classList.toggle('dark-mode');
+    localStorage.setItem('darkMode', body.classList.contains('dark-mode') ? 'enabled' : 'disabled');
+  });
