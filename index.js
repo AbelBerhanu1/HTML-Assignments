@@ -17,3 +17,13 @@ document.addEventListener('DOMContentLoaded', () => {
     body.classList.toggle('dark-mode');
     localStorage.setItem('darkMode', body.classList.contains('dark-mode') ? 'enabled' : 'disabled');
   });
+
+document.querySelectorAll('img').forEach(img => {
+    const animate = () => {
+      img.style.transition = 'transform 0.4s';
+      img.style.transform = 'rotate(5deg)';
+      setTimeout(() => { img.style.transform = 'rotate(0deg)'; }, 400);
+    };
+    img.addEventListener('touchstart', animate);
+    img.addEventListener('click', animate);
+  });
