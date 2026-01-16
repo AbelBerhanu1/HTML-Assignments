@@ -27,3 +27,12 @@ document.querySelectorAll('img').forEach(img => {
     img.addEventListener('touchstart', animate);
     img.addEventListener('click', animate);
   });
+
+document.querySelectorAll('a').forEach(a => {
+    a.addEventListener('click', e => {
+      if (!confirm(`Explore more about Mac at ${a.href}?`)) e.preventDefault();
+    });
+    a.addEventListener('touchstart', () => {
+      alert(`Touched bio link: ${a.href}`);
+    });
+  });
