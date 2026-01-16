@@ -36,3 +36,22 @@ document.querySelectorAll('a').forEach(a => {
       alert(`Touched bio link: ${a.href}`);
     });
   });
+
+const guitar = document.createElement('div');
+  guitar.textContent = '🎸 Strum me!';
+  guitar.style.cursor = 'pointer';
+  guitar.style.padding = '12px';
+  guitar.style.fontSize = '1.4em';
+  document.querySelector('footer').appendChild(guitar);
+
+  const playStrum = () => {
+    const ctx = new (window.AudioContext || window.webkitAudioContext)();
+    [330, 392, 440, 523].forEach((freq, i) => {
+      const osc = ctx.createOscillator();
+      osc.type = 'sawtooth';
+      osc.frequency.value = freq;
+      osc.connect(ctx.destination);
+      setTimeout(() => osc.start(), i * 50);
+      setTimeout(() => osc.stop(), i * 50 + 300);
+    });
+  };
