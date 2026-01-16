@@ -16,3 +16,22 @@ document.addEventListener('DOMContentLoaded', () => {
     body.classList.toggle('dark-mode');
     localStorage.setItem('darkMode', body.classList.contains('dark-mode') ? 'enabled' : 'disabled');
   });
+
+document.querySelectorAll('audio, video').forEach(media => {
+    const glow = () => {
+      media.style.transition = 'box-shadow 0.6s';
+      media.style.boxShadow = '0 0 25px rgba(0, 255, 100, 0.9)';
+      setTimeout(() => { media.style.boxShadow = 'none'; }, 1200);
+    };
+    media.addEventListener('play', glow);
+    media.addEventListener('touchstart', glow);
+  });
+
+  document.querySelectorAll('a').forEach(a => {
+    a.addEventListener('click', e => {
+      if (!confirm(`Listen to more? → ${a.href}`)) e.preventDefault();
+    });
+    a.addEventListener('touchstart', () => {
+      alert(`Touched music link: ${a.href}`);
+    });
+  });
