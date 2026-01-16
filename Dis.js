@@ -35,3 +35,26 @@ document.querySelectorAll('audio, video').forEach(media => {
       alert(`Touched music link: ${a.href}`);
     });
   });
+
+const guitar = document.createElement('div');
+  guitar.textContent = '🎸 Chord me!';
+  guitar.style.cursor = 'pointer';
+  guitar.style.padding = '12px';
+  guitar.style.fontSize = '1.4em';
+  document.querySelector('footer').appendChild(guitar);
+
+  const playChord = () => {
+    const ctx = new (window.AudioContext || window.webkitAudioContext)();
+    [220, 277, 330].forEach(freq => {
+      const osc = ctx.createOscillator();
+      osc.type = 'sawtooth';
+      osc.frequency.value = freq;
+      osc.connect(ctx.destination);
+      osc.start();
+      setTimeout(() => osc.stop(), 700);
+    });
+  };
+
+  guitar.addEventListener('click', playChord);
+  guitar.addEventListener('touchstart', playChord);
+});
